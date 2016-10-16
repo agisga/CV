@@ -1,0 +1,230 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% \documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass[margin]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+\usepackage{hyperref}
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+% Makes the random asterisk (*), that appears above the bibtex references for some reason, disappear.
+% See http://tex.stackexchange.com/questions/28339/random-asterisk-when-using-bibtex-and-res-cls
+\makeatletter
+\renewenvironment{thebibliography}[1]
+     {\list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf Alexej Gossmann} % Your name at the top
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+
+\moveleft.5\hoffset\centerline{Department of Mathematics} % Your address
+\moveleft.5\hoffset\centerline{Tulane University} % Your address
+\moveleft.5\hoffset\centerline{6823 St.Charles Ave.} % Your address
+%\moveleft.5\hoffset\centerline{Office: Gibson 313A} % Your address
+\moveleft.5\hoffset\centerline{New Orleans, LA 70118}
+
+\vspace{5pt}
+\moveleft.5\hoffset\centerline{\textbf{Web:} \href{http://www.alexejgossmann.com/}{alexejgossmann.com}} 
+\moveleft.5\hoffset\centerline{\textbf{Email:} \href{mailto:agossman@tulane.edu}{agossman@tulane.edu}}
+
+\vspace{5pt}
+\moveleft.5\hoffset\centerline{Updated: \today} 
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+%
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+%
+%\section{OBJECTIVE}  
+%
+%A position in the field of computers with special interests in business applications programming, information processing, and management systems. 
+%
+%----------------------------------------------------------------------------------------
+%	AREAS OF SPECIALIZATION
+%----------------------------------------------------------------------------------------
+
+\section{AREAS OF INTEREST}
+
+Sparse Regression, Mixed Effects Models, Computational Statistics, Machine Learning, Application to Genomics
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EDUCATION}
+
+{\sl PhD,} Mathematics \\
+Tulane University, New Orleans, Louisiana, expected May 2018
+
+{\sl MS,} Statistics \\
+Tulane University, New Orleans, Louisiana, May 2014\\
+Master's Research Project: Analysis of Bone Growth Data with Mixed-Effects SS ANOVA Methods (supervised by Dr. Michelle Lacey)\\
+GPA: 3.975
+
+{\sl BS,} Mathematics\\
+Technische Universit\"{a}t Darmstadt, Darmstadt, Germany, May 2012\\
+Thesis: On disjunction and numerical existence properties of extensions of Heyting arithmetic (supervised by Dr. Ulrich Kohlenbach)\\
+GPA: 4.0
+
+ 
+ 
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{EXPERIENCE}
+
+{\sl Teaching Experience}
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item \emph{Instructor}: Calculus 1, Tulane University, Department of Mathematics, Fall 2014.
+\item \emph{Co-Teacher}: Statistics for Scientists, Tulane University, Department of Mathematics, Spring 2014.
+\item \emph{Teaching Assistant}: Various Statistics, Calculus, and Real Analysis courses at Tulane University and Technische Universit\"{a}t Darmstadt, Fall 2010 - Spring 2014.
+%\item \emph{Teaching Assistant}: Statistics for Business (Fall 2012 and Spring 2013), Statistics for Scientists (Fall 2012), Probability and Statistics (Fall 2013), Calculus 1 (Fall 2013), Real Analysis (Spring 2014), Analysis 1 (Fall 2010) and Analysis 2 (Spring 2011).
+\end{itemize}
+
+{\sl Internships} 
+\begin{itemize}
+\item {\it Student developer for Google Summer of Code 2015}. Project: Adding Linear Mixed Effects Models Support to SciRuby. Supervised by the Ruby Science Foundation. May -- August 2015.
+\end{itemize} 
+
+{\sl Professional Service Activities}
+\begin{itemize}
+\item {\it Mentor for Google Summer of Code 2016}. Project: Categorical data support for Daru, Statsample and Statsample-glm. May -- August 2016.
+\item President of the SIAM student chapter at Tulane University. September 2014 -- Present.
+\item Main organizer of the Graduate Student Colloquium at the department of Mathematics, Tulane University. September 2014 -- Present.
+\end{itemize}
+
+%{\sl Research Assistantship}
+%\begin{itemize} \itemsep -2pt % Reduce space between items
+%\item Development of statistical and machine learning methods for imaging-genomics in Dr. Yu-Ping Wang's group. January 2015 -- Present.
+%\item Testing a linear correlation between two $L^2$ spatial fields, supervised by Dr. Gromenko, Tulane University, Department of Mathematics. June -- August 2014.
+%\end{itemize}
+
+{\sl Summer Schools and Workshops} 
+\begin{itemize}
+\item {\it 20th Summer Institute in Statistical Genetics}. University of Washington School of Public Health. July 2015. \\
+  Modules attended: 
+  \begin{itemize}
+    \item Unsupervised Methods for Statistical Machine Learning
+    \item MCMC for Genetics
+    \item Pathway \& Network Analysis for Omics Data
+  \end{itemize}
+\item {\it SAMSI 2014 Mathematical and Statistical Modeling Workshop for Graduate Students}, North Carolina State University. July 2014.\\
+  Project: Allergy, Asthma and Exposures in the Homes of the US Population (supervised by scientists from Rho Inc.).
+\end{itemize} 
+
+{\sl Other}
+\begin{itemize}
+\item Kommando 1. Luftwaffendivision, F\"{u}rstenfeldbruck. Military service at the department for public relations and press. June 2008 -- February 2009.
+\end{itemize} 
+
+\section{PUBLICATIONS}
+
+\bibliographystyle{unsrt} %keep list of references unsorted (i.e. sort manualy in the bib file)
+\bibliography{cv}
+\nocite{*}
+
+%\begin{itemize} \itemsep -2pt % Reduce space between items
+%    \item A. Gossmann, S. Cao, and Y.-P. Wang. {\it Identification of Significant Genetic Variants via SLOPE, and its Extension to Group SLOPE.} In Proceedings of the International Conference on Bioinformatics, Computational Biology and Biomedical Informatics, BCB’15, New York, NY, USA, 2015. ACM.
+%    \item S. Cao, H. Qin, A. Gossmann, H.-W. Deng, and Y.-P. Wang. {\it Unified Tests for Fine Scale Mapping and Identifying Sparse High-Dimensional Sequence Associations.} In Proceedings of the International Conference on Bioinformatics, Computational Biology and Biomedical Informatics, BCB’15, New York, NY, USA, 2015. ACM.
+%\end{itemize}
+
+\section{TALKS AND COLLOQUIA}
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+    %\item Title: {\it A sparse regression method for group-wise feature selection with false discovery rate control}. Graduate student colloquium, Tulane University, 2016.
+    \item Title: {\it Identification of Significant Genetic Variants via SLOPE, and its Extension to Group SLOPE}. The 6th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics, Atlanta, GA, 2015.
+    \item Title: {\it Reproducing Kernel Hilbert Spaces and Smoothing Spline Regression}. Graduate student colloquium, Tulane University, 2014.
+\end{itemize}
+
+\section{POSTER PRESENTATIONS}
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+\item A. Gossmann, S. Cao, and Y.-P. Wang, Identification of Significant Genetic Variants via SLOPE, and its Extension to Group SLOPE; (Abstract/Program \#1343F). Presented at the 65th Annual Meeting of The American Society of Human Genetics, October 9, 2015, Baltimore, MD.
+\end{itemize}
+
+\section{SOFTWARE}
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+    \item \verb!grpSLOPE! -- Group SLOPE (Group Sorted L1 Penalized Estimation) is a penalized linear regression method that is used for adaptive selection of groups of significant predictors in a high-dimensional linear model. The Group SLOPE method can control the (group) false discovery rate at a user-specified level. Project repository: \url{https://github.com/agisga/grpSLOPE}. CRAN: \url{https://cran.r-project.org/web/packages/grpSLOPE/index.html} 
+    \item \verb!mixed_models! -- Fit statistical linear models with fixed and random effects in Ruby. Project repository: \url{https://github.com/agisga/mixed_models}. RubyGems: \url{https://rubygems.org/gems/mixed_models}.
+    \item \verb!spitzy! -- A toolbox of numerical differential equation solvers written in pure Ruby. Project repository: \url{https://github.com/agisga/spitzy}. RubyGems: \url{https://rubygems.org/gems/spitzy}.
+    \item I am an active code contributor to projects of the Ruby Science Foundation (SciRuby), such as \verb!NMatrix! (\url{https://github.com/SciRuby/nmatrix}), \verb!statsample-glm! (\url{https://github.com/SciRuby/statsample-glm}), and others.
+\end{itemize}
+ 
+%----------------------------------------------------------------------------------------
+%	(COMPUTER) SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{SKILLS} 
+
+{\sl Computer skills:}
+R, Ruby, C++, Matlab, \LaTeX, Linux, git and github, HTML, CSS.
+
+{\sl Language Knowledge:}
+Bilingual in German and Russian, fluent in English, basic knowledge of French.
+
+%----------------------------------------------------------------------------------------
+%	EXTRA-CURRICULAR ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+%
+%\section{EXTRA-CURRICULAR \\ ACTIVITIES} 
+%
+%Elected {\it House Manager}, Rho Phi Sorority \\
+%Elected {\it Sports Chairman} \\
+%Attended Krannet Leadership Conference \\
+%Headed delegation to Rho Phi Congress \\
+%Junior varsity basketball team \\
+%Participant, seven intramural athletic teams 
+
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+
+\end{document}
