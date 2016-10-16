@@ -1,0 +1,32 @@
+\begin{thebibliography}{1}
+
+\bibitem{cao2015bioinformatics}
+Shaolong Cao, Huaizhen Qin, Alexej Gossmann, Hong-Wen Deng, and Yu-Ping Wang.
+\newblock Unified tests for fine scale mapping and identifying sparse
+  high-dimensional sequence associations.
+\newblock {\em Bioinformatics}, 2015.
+
+\bibitem{sammarco2015}
+Mimi~C Sammarco, Jennifer Simkin, Alexander~J Cammack, Danielle Fassler, Alexej
+  Gossmann, Luis Marrero, Michelle Lacey, Keith Van~Meter, and Ken Muneoka.
+\newblock Hyperbaric oxygen promotes proximal bone regeneration and organized
+  collagen composition during digit regeneration.
+\newblock {\em PloS one}, 10(10), 2015.
+
+\bibitem{cao2015BCB}
+Shaolong Cao, Huaizhen Qin, Alexej Gossmann, Hong-Wen Deng, and Yu-Ping Wang.
+\newblock Unified tests for fine scale mapping and identifying sparse
+  high-dimensional sequence associations.
+\newblock In {\em Proceedings of the 6th ACM Conference on Bioinformatics,
+  Computational Biology and Health Informatics}, BCB '15, pages 241--249, New
+  York, NY, USA, 2015. ACM.
+
+\bibitem{gossmann2015}
+Alexej Gossmann, Shaolong Cao, and Yu-Ping Wang.
+\newblock Identification of significant genetic variants via slope, and its
+  extension to group slope.
+\newblock In {\em Proceedings of the 6th ACM Conference on Bioinformatics,
+  Computational Biology and Health Informatics}, BCB '15, pages 232--240, New
+  York, NY, USA, 2015. ACM.
+
+\end{thebibliography}
