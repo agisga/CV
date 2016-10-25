@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{brzyski2016}
+Damian Brzyski, Alexej Gossmann, Weijie Su, and Ma{\l}gorzata Bogdan.
+\newblock Group slope-adaptive selection of groups of predictors.
+\newblock {\em arXiv preprint arXiv:1610.04960}, 2016.
+
 \bibitem{cao2015bioinformatics}
 Shaolong Cao, Huaizhen Qin, Alexej Gossmann, Hong-Wen Deng, and Yu-Ping Wang.
 \newblock Unified tests for fine scale mapping and identifying sparse
