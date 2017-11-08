@@ -17,7 +17,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 % \documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
@@ -53,21 +53,18 @@
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	NAME AND ADDRESS SECTION
+% NAME AND ADDRESS SECTION
 %----------------------------------------------------------------------------------------
 
 \moveleft.5\hoffset\centerline{\large\bf Alexej Gossmann} % Your name at the top
  
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
 
-\moveleft.5\hoffset\centerline{Department of Mathematics} % Your address
+\moveleft.5\hoffset\centerline{Bioinnovation PhD Program} % Your address
 \moveleft.5\hoffset\centerline{Tulane University} % Your address
-\moveleft.5\hoffset\centerline{6823 St.Charles Ave.} % Your address
-%\moveleft.5\hoffset\centerline{Office: Gibson 313A} % Your address
-\moveleft.5\hoffset\centerline{New Orleans, LA 70118}
 
 \vspace{5pt}
-\moveleft.5\hoffset\centerline{\textbf{Web:} \href{http://www.alexejgossmann.com/}{alexejgossmann.com}} 
+\moveleft.5\hoffset\centerline{\textbf{Web:} \href{http://www.alexejgossmann.com/}{alexejgossmann.com}}
 \moveleft.5\hoffset\centerline{\textbf{Email:} \href{mailto:agossman@tulane.edu}{agossman@tulane.edu}}
 
 %----------------------------------------------------------------------------------------
@@ -78,17 +75,17 @@
 %	OBJECTIVE SECTION
 %----------------------------------------------------------------------------------------
 %
-%\section{OBJECTIVE}  
+%\section{OBJECTIVE}
 %
-%A position in the field of computers with special interests in business applications programming, information processing, and management systems. 
+%A position in the field of computers with special interests in business applications programming, information processing, and management systems.
 %
 %----------------------------------------------------------------------------------------
-%	AREAS OF SPECIALIZATION
+% AREAS OF SPECIALIZATION
 %----------------------------------------------------------------------------------------
 
 \section{AREAS OF INTEREST}
 
-Statistical learning with sparsity, mixed effects models, genomics and brain imaging data analysis, development of scientific software
+Statistical learning with sparsity, feature selection and prediction on big high-dimensional datasets, mixed effects models, analysis of genomics and brain imaging data, development of scientific software
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -96,23 +93,27 @@ Statistical learning with sparsity, mixed effects models, genomics and brain ima
 
 \section{EDUCATION}
 
-{\sl PhD,} Mathematics \\
-Tulane University, New Orleans, Louisiana, expected May 2018
+{\sl PhD,} Bioinnovation \\
+Tulane University, New Orleans, Louisiana, in progress
+
+{\sl Doctoral research,} Mathematics \\
+Tulane University, New Orleans, Louisiana, through January 2017\\
+GPA: 3.975
 
 {\sl MS,} Statistics \\
 Tulane University, New Orleans, Louisiana, May 2014\\
-Master's Research Project: Analysis of Bone Growth Data with Mixed-Effects Smoothing Spline ANOVA Methods (supervised by Dr. Michelle Lacey)\\
+%Master's Research Project: Analysis of Bone Growth Data with Mixed-Effects Smoothing Spline ANOVA Methods (supervised by Dr. Michelle Lacey)\\
 GPA: 3.975
 
 {\sl BS,} Mathematics\\
 Technische Universit\"{a}t Darmstadt, Darmstadt, Germany, May 2012\\
-Thesis: On disjunction and numerical existence properties of extensions of Heyting arithmetic (supervised by Dr. Ulrich Kohlenbach)\\
+%Thesis: On disjunction and numerical existence properties of extensions of Heyting arithmetic (supervised by Dr. Ulrich Kohlenbach)\\
 GPA: 4.0
- 
+
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
- 
+
 \section{EXPERIENCE}
 
 \begin{itemize}
@@ -121,6 +122,25 @@ GPA: 4.0
     \item Mentor for Google Summer of Code 2016. Project: Categorical data support for Daru, Statsample and Statsample-glm. May -- August 2016.
     \item President of the SIAM student chapter at Tulane University. September 2014 -- September 2016.
     \item Main organizer of the Graduate Student Colloquium at the department of Mathematics, Tulane University. September 2014 -- September 2016.
+\end{itemize}
+ 
+%----------------------------------------------------------------------------------------
+%	(COMPUTER) SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{SKILLS}
+
+{\sl Computer skills:}
+R, Ruby, C++, Matlab, \LaTeX, Linux, git and github, HTML, CSS.
+
+{\sl Language Knowledge:}
+Bilingual in German and Russian, fluent in English, basic knowledge of French.
+
+\section{HONORS \& AWARDS}
+
+\begin{itemize}
+  \item Reviewers’ Choice Abstract (top 10\% of poster abstracts), 66th Annual Meeting of The American Society of Human Genetics, October 19, 2016, Vancouver, Canada.
+  \item SIAM Student Chapter Certificate of Recognition, SIAM (Society for Industrial and Applied Mathematics), April 2015.
 \end{itemize}
 
 \section{PUBLICATIONS}
@@ -140,32 +160,15 @@ GPA: 4.0
 \section{SOFTWARE}
 
 \begin{itemize} \itemsep -2pt % Reduce space between items
-    \item \verb!grpSLOPE! -- Group SLOPE (Group Sorted L1 Penalized Estimation) is a penalized linear regression method that is used for adaptive selection of groups of significant predictors in a high-dimensional linear model. The Group SLOPE method can control the (group) false discovery rate at a user-specified level. Project repository: \url{https://github.com/agisga/grpSLOPE}. CRAN: \url{https://cran.r-project.org/web/packages/grpSLOPE/index.html} 
+    \item \verb!grpSLOPE! -- Group SLOPE (Group Sorted L1 Penalized Estimation) is a penalized linear regression method that is used for adaptive selection of groups of significant predictors in a high-dimensional linear model. The Group SLOPE method can control the (group) false discovery rate at a user-specified level. Project repository: \url{https://github.com/agisga/grpSLOPE}. CRAN: \url{https://cran.r-project.org/web/packages/grpSLOPE/index.html}.
+    \item \verb!grpSLOPEMC! -- This is an extension package to the R package grpSLOPE. It contains Monte Carlo based methods for the estimation of the regularizing sequence. Project repository: \url{https://github.com/agisga/grpSLOPEMC}.
     \item \verb!mixed_models! -- Fit statistical linear models with fixed and random effects in Ruby. Project repository: \url{https://github.com/agisga/mixed_models}. RubyGems: \url{https://rubygems.org/gems/mixed_models}.
-    \item I am an active code contributor to projects of the Ruby Science Foundation (SciRuby), such as \verb!NMatrix! (\url{https://github.com/SciRuby/nmatrix}), \verb!statsample-glm! (\url{https://github.com/SciRuby/statsample-glm}), and others.
+    \item In my free time I like to contribute to open source software projects. Visit my Github page for the projects that I contribute to: \url{https://github.com/agisga}.
 \end{itemize}
 
-\section{HONORS \& AWARDS}
-
-\begin{itemize}
-  \item Reviewers’ Choice Abstract (top 10\% of poster abstracts), 66th Annual Meeting of The American Society of Human Genetics, October 19, 2016, Vancouver, Canada.
-  \item SIAM Student Chapter Certificate of Recognition, SIAM (Society for Industrial and Applied Mathematics), April 2015.
-\end{itemize}
- 
-%----------------------------------------------------------------------------------------
-%	(COMPUTER) SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{SKILLS} 
-
-{\sl Computer skills:}
-R, Ruby, C++, Matlab, \LaTeX, Linux, git and github, HTML, CSS.
-
-{\sl Language Knowledge:}
-Bilingual in German and Russian, fluent in English, basic knowledge of French.
 
 \vfill
-\moveleft.5\hoffset\centerline{Updated: \today} 
+\moveleft.5\hoffset\centerline{Updated: \today}
 
 %----------------------------------------------------------------------------------------
 %	EXTRA-CURRICULAR ACTIVITIES SECTION
