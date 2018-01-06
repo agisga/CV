@@ -20,14 +20,13 @@
 % PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-% \documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
-\documentclass[margin]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass[overlapped, line, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 \usepackage{hyperref}
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 
-\setlength{\textwidth}{5.1in} % Text width of the document
+\setlength{\textwidth}{5.5in} % Text width of the document
 
 % Makes the random asterisk (*), that appears above the bibtex references for some reason, disappear.
 % See http://tex.stackexchange.com/questions/28339/random-asterisk-when-using-bibtex-and-res-cls
@@ -50,21 +49,21 @@
        {\@latex@warning{Empty `thebibliography' environment}}%
       \endlist}
 \makeatother
+
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 % NAME AND ADDRESS SECTION
 %----------------------------------------------------------------------------------------
 
-\moveleft.5\hoffset\centerline{\large\bf Alexej Gossmann} % Your name at the top
+\name{Alexej Gossmann}
 
-\moveleft.5\hoffset\centerline{Bioinnovation PhD Program, Tulane University, New Orleans} % Your address
-
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
-
-
-\vspace{5pt}
-\moveleft.5\hoffset\centerline{{Web:} \href{http://www.alexejgossmann.com/}{alexejgossmann.com} \textbar {LinkedIn:} \href{https://www.linkedin.com/in/alexejgossmann/}{alexejgossmann} \textbar {Github:} \href{https://github.com/agisga}{agisga} \textbar {Email:} \href{mailto:agossman@tulane.edu}{agossman@tulane.edu}}
+\address{
+  Web: \href{http://www.alexejgossmann.com/}{alexejgossmann.com} \textbar
+  LinkedIn: \href{https://www.linkedin.com/in/alexejgossmann/}{alexejgossmann} \textbar
+  Github: \href{https://github.com/agisga}{agisga} \textbar
+  Email: \href{mailto:agossman@tulane.edu}{agossman@tulane.edu}
+}
 
 %----------------------------------------------------------------------------------------
 
@@ -95,7 +94,6 @@ GPA: 3.978
 
 {\sl MS,} Statistics \\
 Tulane University, New Orleans, Louisiana, May 2014\\
-%Master's Research Project: Analysis of Bone Growth Data with Mixed-Effects Smoothing Spline ANOVA Methods (supervised by Dr. Michelle Lacey)\\
 GPA: 3.975
 
 {\sl BS,} Mathematics\\
@@ -115,16 +113,69 @@ GPA: 3.7 (1.54 German grade)
 
 \section{EXPERIENCE}
 
-\begin{itemize}
-  \item Research assistantship in \emph{The Multiscale Bioimaging and Bioinformatics Laboratory} at Tulane University under the supervision of {Dr.\,Yu-Ping Wang}, resulting six peer-reviewed publications \cite{gossmann2015, cao2015BCB, cao2015bioinformatics, Gossmann2017-yu, brzyski2016, Gossmann2017-ln}, a number of presentations at conferences and workshops, and several open source software packages which have been successfully applied for the analysis of genomics and neuroimaging data. Spring 2015 -- present.
-  \item Student Intern doing \emph{machine learning research} in the \emph{Division of Imaging, Diagnostics, and Software Reliability} (CDRH/OSEL/DIDSR) at the U.S. \emph{Food \& Drug Administration} (FDA), resulting in a conference presentation and publication \cite{gossmann2018} that can inform future policy on evaluation of machine learning systems in medicine. May -- August 2017 and Jan -- Feb 2018.
-  \item Analysis of bone growth data using mixed-effects smoothing spline ANOVA methods (MS project supervised by Dr. Michelle Lacey at Tulane University), resulting in a peer-reviewed publication \cite{sammarco2015}. September 2013 -- May 2014.
-  \item Student developer for Google Summer of Code 2015. Project: \emph{Adding Linear Mixed Effects Models Support to SciRuby} (supervised by developers from the Ruby Science Foundation). Summary of accomplishments: \url{http://sciruby.com/blog/2015/08/19/gsoc-2015-mixed-models/}. The created statistical software package received about 2700 downloads, and was considered for deployment at \url{http://www.genenetwork.org}. May -- August 2015.
-  \item Mentor for Google Summer of Code 2016 (with the Ruby Science Foundation). Project: \emph{Categorical data support for Daru, Statsample and Statsample-glm}. The mentored student (Lokesh Sharma) made major improvements to several open source software packages for data analysis in Ruby (summary of accomplishments: \url{http://sciruby.com/blog/2016/11/25/gsoc-2016-adding-categorical-data-support/}}). May -- August 2016.
-  \item Mentor for Google Summer of Code 2017 (with the Ruby Science Foundation). Project: \emph{Creating the fastest math libraries for Ruby by using the GPU through OpenCL and ArrayFire}. Outcome: a software package and multiple conference presentations by the mentored student (Prasun Anand). Summary of accomplishments: \url{http://www.prasunanand.com/arrayfire/cuda/opencl/ruby/2017/08/28/gsoc17-project-report.html}. May -- August 2017.
-  \item Research assistantship under the supervision of {Dr.\,Oleksandr Gromenko} at the Department of Mathematics, Tulane University, working on \emph{statistical methods for the analysis of spatio-temporal processes}, with application in weather prediction. June -- August 2014.
-  \item \emph{Instructor, co-teacher, and teaching assistant} for various undergraduate statistics, calculus, and real analysis courses at Tulane University and Technische Universit\"{a}t Darmstadt, Fall 2010 - Fall 2014.
-\end{itemize}
+\title{Research assistantship (doctoral research)}
+\employer{The Multiscale Bioimaging and Bioinformatics Laboratory}
+\dates{Jan 2015 -- present}
+\location{Tulane University, New Orleans, LA}
+\begin{position}
+  Research in statistics and machine learning with application in genomics and neuroimaging under the supervision of Dr. Yu-Ping Wang, resulting in six peer-reviewed publications (\cite{gossmann2015}, \cite{cao2015BCB}, \cite{cao2015bioinformatics}, \cite{Gossmann2017-yu}, \cite{Gossmann2017-ln}, \cite{brzyski2016}), presentations at multiple conferences and workshops, and several open source software packages.
+\end{position}
+
+\title{Student intern (ORISE)}
+\employer{Division of Imaging, Diagnostics, and Software Reliability (CDRH/OSEL/DIDSR) at the U.S. Food \& Drug Administration}
+\dates{May -- Aug 2017, and Jan -- Feb 2018}
+\location{FDA, Silver Spring, MD}
+\begin{position}
+  Machine learning research resulting in a conference presentation and associated publication \cite{gossmann2018} that can inform future policy on evaluation of machine learning systems in medicine.
+\end{position}
+
+\title{Statistics MS research project}
+\employer{Department of Mathematics}
+\location{Tulane University, New Orleans, LA}
+\dates{Sept 2013 -- May 2014}
+\begin{position}
+  Analysis of bone growth data using mixed-effects smoothing spline ANOVA methods (supervised by Dr. Michelle Lacey) resulting in a journal publication \cite{sammarco2015}.
+\end{position}
+
+\title{Research assistantship}
+\employer{Department of Mathematics}
+\location{Tulane University, New Orleans, LA}
+\dates{Jun -- Aug 2014}
+\begin{position}
+  Worked under the supervision of Dr. Oleksandr Gromenko on statistical methods for the analysis of spatio-temporal processes with application in weather prediction.
+\end{position}
+
+\title{Student developer}
+\employer{Google Summer of Code 2015}
+\dates{May -- August 2015}
+\location{Remote position}
+\begin{position}
+  Project: Adding Linear Mixed Effects Models Support to SciRuby (supervised by developers from the Ruby Science Foundation). The created statistical software package received about 2700 downloads, and was considered for deployment at \url{http://www.genenetwork.org}.
+\end{position}
+
+\title{Mentor}
+\employer{Google Summer of Code 2016 (with the Ruby Science Foundation)}
+\location{Remote position}
+\dates{May -- August 2016}
+\begin{position}
+  Involved with project proposals, selection/interviewing of students, mentoring. Mentored project: Categorical data support for Daru, Statsample and Statsample-glm. The mentored student (Lokesh Sharma) made major improvements to several open source software packages for data analysis in Ruby.
+\end{position}
+
+\title{Mentor}
+\employer{Google Summer of Code 2017 (with the Ruby Science Foundation)}
+\location{Remote position}
+\dates{May -- August 2017}
+\begin{position}
+  Involved with project proposals, selection/interviewing of students, mentoring. Mentored project: Creating the fastest math libraries for Ruby by using the GPU through OpenCL and ArrayFire. Outcome: a Ruby library for scientific computing on the GPU (\url{https://github.com/arrayfire/arrayfire-rb}) and multiple conference presentations by the mentored student (Prasun Anand).
+\end{position}
+
+\title{Instructor, co-teacher, teaching assistant}
+\employer{Technische Universit\"{a}t Darmstadt, and Tulane University}
+\location{Darmstadt, Germany, and New Orleans, LA}
+\dates{Fall semester 2010 -- Fall semester 2014}
+\begin{position}
+  Instructor for Calculus 1, co-teacher for Statistics for Scientists, and teaching assistant for Real Analysis 1 and 2 as well as for various undergraduate courses in mathematics and statistics.
+\end{position}
 
 %---
 
@@ -135,7 +186,7 @@ GPA: 3.7 (1.54 German grade)
 
 %---
 
-\section{SELECTED CONFERENCE PRESENTATIONS}
+\section{CONFERENCE PRESENTATIONS}
 
 \begin{itemize} \itemsep -2pt % Reduce space between items
   \item SlopeCCA and gslopeCCA: sorted L1 penalized canonical correlation analysis (Abstract/Program \#2803W). Presented at the {\it 66th Annual Meeting of The American Society of Human Genetics}, October 19, 2016, Vancouver, Canada.
@@ -148,7 +199,7 @@ GPA: 3.7 (1.54 German grade)
 \section{SOFTWARE}
 
 \begin{itemize} \itemsep -2pt % Reduce space between items
-    \item \verb!grpSLOPE! -- Group SLOPE (Group Sorted L1 Penalized Estimation) is a penalized linear regression method that is used for adaptive selection of groups of significant predictors in a high-dimensional linear model. The Group SLOPE method can control the (group) false discovery rate at a user-specified level. Project repository: \url{https://github.com/agisga/grpSLOPE}. CRAN: \url{https://cran.r-project.org/web/packages/grpSLOPE/index.html}.
+    \item \verb!grpSLOPE! -- Group SLOPE (Group Sorted L1 Penalized Estimation) is a penalized linear regression method that is used for adaptive selection of groups of significant predictors in a high-dimensional linear model. Group SLOPE can control the (group) false discovery rate at a user-specified level. Project repository: \url{https://github.com/agisga/grpSLOPE}. CRAN: \url{https://cran.r-project.org/web/packages/grpSLOPE/index.html}.
     \item \verb!grpSLOPEMC! -- This is an extension package to the R package grpSLOPE. It contains Monte Carlo based methods for the estimation of the regularizing sequence. Project repository: \url{https://github.com/agisga/grpSLOPEMC}.
     \item \verb!mixed_models! -- Fit statistical linear models with fixed and random effects in Ruby. Project repository: \url{https://github.com/agisga/mixed_models}. RubyGems: \url{https://rubygems.org/gems/mixed_models}.
     \item In my free time I like to contribute to open source software projects. Visit my Github page for the projects that I contribute to: \url{https://github.com/agisga}.
@@ -156,16 +207,18 @@ GPA: 3.7 (1.54 German grade)
 
 %---
 
-\section{EXTRA-CURRICULAR \\ ACTIVITIES}
+\section{EXTRA-CURRICULAR ACTIVITIES}
 
 Elected {\it President} of the SIAM student chapter at Tulane University, September 2014 -- September 2016.
 Organized the Graduate Student Colloquium at the Department of Mathematics, Tulane University, September 2014 -- September 2016.
+Participation in \emph{Google Summer of Code} as a student developer in 2015, and as a mentor in 2016 and 2017.
+Participation in the middle school outreach program \emph{Girls in STEM at Tulane (GIST)}, November 2017.
 
 %---
 
 \section{HONORS \& AWARDS}
 
-\begin{itemize}
+\begin{itemize} \itemsep -2pt % Reduce space between items
   \item Reviewers’ Choice Abstract (top 10\% of poster abstracts), 66th Annual Meeting of The American Society of Human Genetics, October 19, 2016, Vancouver, Canada.
   \item SIAM Student Chapter Certificate of Recognition, SIAM (Society for Industrial and Applied Mathematics), April 2015.
 \end{itemize}
