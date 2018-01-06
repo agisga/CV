@@ -26,6 +26,12 @@
 \usepackage{hyperref}
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 
+% This is used to remove indentation within the itemize environment (based on https://tex.stackexchange.com/questions/91124/itemize-removing-natural-indent#91128)
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+% Also replace itemize dots with dashes:
+\renewcommand\labelitemi{$-$}
+
 \setlength{\textwidth}{5.5in} % Text width of the document
 
 % Makes the random asterisk (*), that appears above the bibtex references for some reason, disappear.
@@ -83,6 +89,15 @@ translation of the statistical and machine learning methodology into a useful (s
 
 %---
 
+\section{SKILLS}
+
+{\sl Core:} Data science, statistics, machine learning, (applied) mathematics, scientific research.\\
+{\sl Software, programming, tools:} R, Ruby, C++, Python, Matlab, \LaTeX, Linux/Unix, git and github, HTML, CSS.\\
+{\sl Domain knowledge:} Genomics and medical imaging.\\
+{\sl Language knowledge:} Bilingual in German and Russian, fluent in English.
+
+%---
+
 \section{EDUCATION}
 
 {\sl PhD,} Bioinnovation \\
@@ -101,14 +116,15 @@ Technische Universit\"{a}t Darmstadt, Darmstadt, Germany, May 2012\\
 %Thesis: On disjunction and numerical existence properties of extensions of Heyting arithmetic (supervised by Dr. Ulrich Kohlenbach)\\
 GPA: 3.7 (1.54 German grade)
 
-%---
-
-\section{SKILLS}
-
-{\sl Core:} Data science, statistics, machine learning, (applied) mathematics, scientific research.\\
-{\sl Software, programming, tools:} R, Ruby, C++, Python, Matlab, \LaTeX, Linux/Unix, git and github, HTML, CSS.\\
-{\sl Domain knowledge:} Genomics and medical imaging.\\
-{\sl Language knowledge:} Bilingual in German and Russian, fluent in English.
+{\sl Workshops and summer schools}\\
+SAMSI Industrial Mathematical and Statistical Modeling Workshop for Graduate Students, June 2014.
+20th Summer Institute in Statistical Genetics, University of Washington, Seattle, WA, June 2015.
+21st Summer Institute in Statistical Genetics, University of Washington, Seattle, WA, June 2016.
+2nd Summer Institute in Statistics for Big Data, University of Washington, Seattle, June 2016.
+SAMSI Optimization Summer School, August 2016.
+SAMSI Optimization Opening Workshop, August 2016.
+SAMSI Distributed and Parallel Data Analysis Workshop, September 2016.
+IPAM New Deep Learning Techniques, Los Angeles, CA, February 2018.
 
 %---
 
@@ -189,27 +205,37 @@ GPA: 3.7 (1.54 German grade)
 
 \section{CONFERENCE PRESENTATIONS}
 
-\begin{thebibliography}{9}
-  \bibitem{ASHG2016}
-    Gossmann A., Wang Y.-P., SlopeCCA and gslopeCCA: sorted L1 penalized canonical correlation analysis; (Abstract/Program \#2803W).
-    Presented at the \textit{66th Annual Meeting of The American Society of Human Genetics}, October 19, 2016, Vancouver, Canada.
-  \bibitem{ASHG2015}
-    Gossmann A., Cao S., Wang Y.-P., Identification of Significant Genetic Variants via SLOPE, and its Extension to Group SLOPE; (Abstract/Program \#1343F).
-    Presented at the \textit{65th Annual Meeting of The American Society of Human Genetics}, October 9, 2015, Baltimore, MD.
-  \bibitem{ACMBCB2015}
+\begin{itemize}
+  \item
+    Gossmann A., Pezeshk, A., Sahiner, B., Test data reuse for evaluation of adaptive machine learning algorithms: over-fitting to a fixed ``test'' dataset and a potential solution;
+    (Paper 10577-19).
+    To be presented at the \textit{SPIE Medical Imaging symposium, Image Perception, Observer Performance, and Technology Assessment conference},
+    February 11, 2018, Houston, TX.
+  \item
+    Gossmann A., Wang Y.-P., SlopeCCA and gslopeCCA: sorted L1 penalized canonical correlation analysis;
+    (Abstract/Program \#2803W).
+    Presented at the \textit{66th Annual Meeting of The American Society of Human Genetics},
+    October 19, 2016, Vancouver, Canada.
+  \item
+    Gossmann A., Cao S., Wang Y.-P., Identification of Significant Genetic Variants via SLOPE, and its Extension to Group SLOPE;
+    (Abstract/Program \#1343F).
+    Presented at the \textit{65th Annual Meeting of The American Society of Human Genetics},
+    October 9, 2015, Baltimore, MD.
+  \item
     Gossmann A., Cao S., Wang Y.-P., Identification of Significant Genetic Variants via SLOPE, and its Extension to Group SLOPE.
-    The \textit{6th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics}, Atlanta, GA, September 2015.
-\end{thebibliography}
+    The \textit{6th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics},
+    Atlanta, GA, September 2015.
+\end{itemize}
 
 %---
 
 \section{SOFTWARE}
 
 \begin{itemize} \itemsep -2pt % Reduce space between items
-    \item \verb!grpSLOPE! -- Group SLOPE (Group Sorted L1 Penalized Estimation) is a penalized linear regression method that is used for adaptive selection of groups of significant predictors in a high-dimensional linear model. Group SLOPE can control the (group) false discovery rate at a user-specified level. Project repository: \url{https://github.com/agisga/grpSLOPE}. CRAN: \url{https://cran.r-project.org/web/packages/grpSLOPE/index.html}.
-    \item \verb!grpSLOPEMC! -- This is an extension package to the R package grpSLOPE. It contains Monte Carlo based methods for the estimation of the regularizing sequence. Project repository: \url{https://github.com/agisga/grpSLOPEMC}.
-    \item \verb!mixed_models! -- Fit statistical linear models with fixed and random effects in Ruby. Project repository: \url{https://github.com/agisga/mixed_models}. RubyGems: \url{https://rubygems.org/gems/mixed_models}.
-    \item In my free time I like to contribute to open source software projects. Visit my Github page for the projects that I contribute to: \url{https://github.com/agisga}.
+  \item \verb!grpSLOPE! -- Group SLOPE (Group Sorted L1 Penalized Estimation) is a penalized linear regression method that is used for adaptive selection of groups of significant predictors in a high-dimensional linear model. This R package has been used to perform simulations and/or analyses of real genomic data as reported in \cite{Gossmann2017-yu, brzyski2016}. Project repository: \url{https://github.com/agisga/grpSLOPE}. CRAN: \url{https://cran.r-project.org/web/packages/grpSLOPE/index.html}.
+  \item \verb!grpSLOPEMC! -- An extension package to the R package grpSLOPE, which contains additional Monte Carlo based methods implemented in R and C++ (interfaced to R via Rcpp). This R package has been used to perform simulation studies and analyses of real genomic data presented in \cite{Gossmann2017-yu}. Project repository: \url{https://github.com/agisga/grpSLOPEMC}.
+  \item \verb!mixed_models! -- Fit statistical linear models with fixed and random effects in Ruby. It was created during Google Summer of Code 2015, and has been considered for deployment at \url{http://www.genenetwork.org}. Project repository: \url{https://github.com/agisga/mixed_models}. RubyGems: \url{https://rubygems.org/gems/mixed_models}.
+  \item For my contributions to several other open source software projects see \url{https://github.com/agisga}.
 \end{itemize}
 
 %---
