@@ -24,6 +24,8 @@
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 \usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{doi}
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 
 % This is used to remove indentation within the itemize environment (based on https://tex.stackexchange.com/questions/91124/itemize-removing-natural-indent#91128)
@@ -54,6 +56,19 @@
      {\def\@noitemerr
        {\@latex@warning{Empty `thebibliography' environment}}%
       \endlist}
+\makeatother
+
+% This is necessary to get citation keys when natbib is used
+% (natbib is used in order to include DOIs in the reference information)
+\makeatletter
+\def\@lbibitem[#1]#2{%
+\if\relax\@extra@b@citeb\relax\else
+\@ifundefined{br@#2\@extra@b@citeb}{}{%
+\@namedef{br@#2}{\@nameuse{br@#2\@extra@b@citeb}}}\fi
+\@ifundefined{b@#2\@extra@b@citeb}{\def\NAT@num{}}{\NAT@parse{#2}}%
+\item[\hfil\hyper@natanchorstart{#2\@extra@b@citeb}\citep{#2}%
+\hyper@natanchorend]%
+\NAT@ifcmd#1(@)(@)\@nil{#2}}
 \makeatother
 
 \begin{document}
@@ -206,7 +221,7 @@ SAMSI Industrial Mathematical and Statistical Modeling Workshop for Graduate Stu
 
 \section{PUBLICATIONS}
 
-\bibliographystyle{apalike}
+\bibliographystyle{plainnat}
 \bibliography{Alexej_Gossmann_CV}
 
 %---
