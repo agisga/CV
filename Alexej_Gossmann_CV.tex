@@ -24,7 +24,7 @@
 
 \usepackage{helvet} % Default font is the helvetica postscript font
 \usepackage{hyperref}
-\usepackage{natbib}
+\usepackage{natbib}  % natbib is used in order to include DOIs in the reference information
 \usepackage{doi}
 %\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 
@@ -230,10 +230,11 @@ SAMSI Industrial Mathematical and Statistical Modeling Workshop for Graduate Stu
 
 %---
 
-\section{PUBLICATIONS}
+\section{PUBLICATIONS (sorted alphabetically)}
 
 \nocite{*}
-\bibliographystyle{plainnat}
+\bibliographystyle{plainnat}  % citations are in alphabetic order
+%\bibliographystyle{unsrtnat}  % citations are in the same order as in the bibtex file --> this doesn't work because some references are cited above, and thus, for example, first cited paper appears first in the bibliography here
 \bibliography{Alexej_Gossmann_CV}
 
 %---
@@ -241,6 +242,10 @@ SAMSI Industrial Mathematical and Statistical Modeling Workshop for Graduate Stu
 \section{CONFERENCE PRESENTATIONS}
 
 \begin{itemize}
+  \item 
+    Gossmann A. Evaluation of continuously learning AI/ML-enabled medical devices.
+    Presented at \textit{Next Generation Dx},
+    August 2019, Washington, DC.
   \item
     Gossmann A., Chen W., Sahiner, B., Assessment of Classifier Performance Using a Reference Classifier with Known Performance and an Unlabeled Dataset;
     (Abstract/Program \#307008).
@@ -264,7 +269,7 @@ SAMSI Industrial Mathematical and Statistical Modeling Workshop for Graduate Stu
   \item
     Gossmann A., Cao S., Wang Y.-P., Identification of Significant Genetic Variants via SLOPE, and its Extension to Group SLOPE.
     The \textit{6th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics},
-    Atlanta, GA, September 2015.
+    September 2015, Atlanta, GA.
 \end{itemize}
 
 %---
